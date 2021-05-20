@@ -2,4 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  .list-item {
+    list-style-type: none;
+    font-size: 20px;
+  }
 }
