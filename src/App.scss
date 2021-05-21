@@ -1,9 +1,27 @@
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
+
+@mixin flexRow {
   display: flex;
   flex-direction: row;
+}
+
+.navbar {
+  @include flexRow;
   justify-content: space-around;
   .list-item {
     list-style-type: none;
     font-size: 20px;
+    font-family: 'KoHo', sans-serif;
+  }
+}
+
+#social_icons_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  .social_icon {
+    margin-bottom: 20px;
   }
 }
