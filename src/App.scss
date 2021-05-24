@@ -1,17 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin flexRow {
   display: flex;
   flex-direction: row;
 }
 
+body {
+  background-color: #2f2fa2;
+}
+
 .navbar {
-  @include flexRow;
-  justify-content: space-around;
-  .list-item {
-    list-style-type: none;
-    font-size: 20px;
-    font-family: 'KoHo', sans-serif;
+  z-index: 2;
+  margin-top: 4px;
+  .navlist {
+    @include flexRow;
+    justify-content: space-around;
+    :nth-child(4) {
+      border-style: solid;
+      border-width: 2px;
+      border-color: #f64c72;
+      padding-right: 4px;
+      padding-left: 4px;
+    }
+    .list-item {
+      list-style-type: none;
+      font-size: 20px;
+      font-family: 'KoHo', sans-serif;
+      color: white;
+    }
   }
 }
 
@@ -21,6 +42,8 @@
   justify-content: center;
   align-items: flex-start;
   position: fixed;
+  margin-top: 80px;
+  margin-left: 10px;
   .social_icon {
     margin-bottom: 20px;
   }
