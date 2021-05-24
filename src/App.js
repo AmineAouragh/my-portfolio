@@ -1,13 +1,13 @@
 import React from 'react'
 import TopNav from './topnav'
-import Social from './social_icons'
+import About from './about'
 import './App.scss'
 
 function App() {
   return (
     <div>
       <TopNav />
-      <Social />
+      <About />
     </div>
   )
 }
