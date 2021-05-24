@@ -33,6 +33,10 @@ body {
       font-family: 'KoHo', sans-serif;
       color: white;
     }
+    .list-item:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 }
 
@@ -46,5 +50,11 @@ body {
   margin-left: 10px;
   .social_icon {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .list-item {
+    font-size: 28px;
   }
 }
