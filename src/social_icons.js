@@ -7,7 +7,6 @@ export default function Social() {
       <SocialIcon url="https://linkedin.com/in/amineaouragh" className="social_icon"/>
       <SocialIcon url="https://github.com/AmineAouragh" className="social_icon"/>
       <SocialIcon url="https://instagram.com/amineaouragh21" className="social_icon"/>
-      <SocialIcon url="https://facebook.com/AmineAouragh20" className="social_icon"/>
     </div>
   )
 }
